@@ -1,0 +1,101 @@
+@import 'index.css';
+@import 'image.jpg';
+// Reset de estilos para garantir consistência entre navegadores
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+// Variáveis
+$primary-color: #2ecc71;
+$secondary-color: #3498db;
+
+// Estilos globais
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+// Estilos do cabeçalho
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+// Estilos do menu
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  li {
+    list-style: none;
+    margin: 0 15px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+// Estilos da seção de destaque
+.hero-section {
+  background-image: url('caminho/para/sua/imagem.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  button {
+    background-color: $secondary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+// Estilos do rodapé
+.footer {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
